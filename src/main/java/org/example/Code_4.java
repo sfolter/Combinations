@@ -29,7 +29,7 @@ public class Code_4 {
 
         boolean isValid = true;
         final int ipv4OctetCount = 4;
-        final int[] intOctets = new int[ipv4OctetCount]; //Защо не можем да подадем new int[octets.length()]
+        final int[] intOctets = new int[octets.length];
         if (octets.length == ipv4OctetCount) {
             for (int i = 0; i < octets.length; i++) {
                 String octet = octets[i];
