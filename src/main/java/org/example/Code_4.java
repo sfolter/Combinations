@@ -7,6 +7,7 @@ public class Code_4 {
 
     public static void main(String[] args) {
         String text = args[0];
+        //0123122411
 
         for (int i = 1; i < text.length(); i++) {
             for (int j = i + 1; j < text.length(); j++) {
@@ -26,8 +27,6 @@ public class Code_4 {
     }
 
     private static Optional<int[]> getIPAddress(String[] octets) {
-
-        boolean isValid = true;
         final int ipv4OctetCount = 4;
         final int[] intOctets = new int[octets.length];
         if (octets.length == ipv4OctetCount) {
@@ -44,7 +43,7 @@ public class Code_4 {
         return Optional.empty();
     }
 
-    private static Optional<Integer> getIntOctet(String octet) {
+    private static Optional<Integer> getIntOctet(String octet)  {
         try {
             final Integer integer = Integer.valueOf(octet);
             final boolean isValid = 0 <= integer && integer <= 255;
